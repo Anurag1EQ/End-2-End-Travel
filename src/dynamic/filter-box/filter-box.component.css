@@ -1,0 +1,7 @@
+.main{
+    position: fixed;
+}
+
+.right{
+    overflow-y: scroll;
+}

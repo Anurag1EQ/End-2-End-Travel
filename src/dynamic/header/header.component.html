@@ -1,0 +1,113 @@
+<div class="header flex flex-col items-center gap-3" style="position: sticky; top:56px; z-index: 10;">
+            
+    <div class="navBar bg-[#01478c] w-full h-[3rem]"></div>
+    <div class="modifySearchTab bg-white flex items-center rounded-lg w-[80%] mt-[-2rem] p-2 h-[4.5rem] gap-2 mb-0" style="box-shadow: 2px 2px 5px rgb(60 60 60 / 49%); ">
+
+        <div class="header1 flex w-[50%] items-center justify-between gap-2 ">
+            <div class="from bg-[#f1f1f1] flex-grow rounded-lg flex-grow flex justify-between items-center p-3 relative">
+                <div class="station1">
+                    <input type="text" id="fromLocation"  placeholder="FROM" class="placeHolder w-[100%]" style="outline: none;">
+                </div>
+                <div class="nearMeIcon flex justify-center items-cente " >
+                    <span class="material-symbols-outlined text-[#888888] cursor-pointer">
+                        near_me
+                    </span>
+                </div>
+                
+                <div class="cityListing w-full left-0 rounded-md absolute bg-white text-[#444444]  top-[64px] max-h-[300px]" >
+                    <div class="currentLocation flex p-2 cursor-pointer" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                        <span class="material-symbols-outlined">
+                            distance
+                        </span>
+                        <h1>Your Current Location</h1>
+                    </div>
+                    <ul class="list p-2 " style="overflow: scroll; max-height: 200px; scrollbar-width: none;" >
+                        <li class="cursor-pointer"> Sonipat , Delhi-NCR </li>
+                        <li class="cursor-pointer"> Khatu Shyam Ji , Sikar </li>
+                        <li class="cursor-pointer"> Ringas , Rajasthan </li>
+                        <li class="cursor-pointer"> ChinnaSwamy Stadium </li>
+                        <li class="cursor-pointer"> Chepauk Stadium , Chennai</li>
+                        <li class="cursor-pointer"> Greater Noida </li>
+                        <li class="cursor-pointer"> Chulkana Dham near Panipat  </li>
+                        <li class="cursor-pointer"> Panipat , Haryana </li>
+                        <li class="cursor-pointer"> Rohtak </li>
+                        <li class="cursor-pointer"> Yamunanagar , Haryana </li>
+                        <li class="cursor-pointer"> Kharkhoda near Sonipat </li>
+                        <li class="cursor-pointer"> Mumbai , Maharashtra</li>
+                        <li class="cursor-pointer"> Gurgaon , Delhi-NCR </li>
+                        <li class="cursor-pointer"> Dwarka Delhi </li>
+                        <li class="cursor-pointer"> Gaziabad Uttar Pradesh </li>
+                        <li class="cursor-pointer"> Faridabad , Delhi-NCR </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="shuffleIcon h-[2.2rem] bg-[#01478c] rounded-full flex justify-center items-center cursor-pointer" style=" aspect-ratio: 1/1;">
+                <span class="material-symbols-outlined text-white flex justify-center items-center" style="font-size: 0.9rem;">
+                    sync_alt
+                </span>
+            </div>
+
+            <div class="to bg-[#f1f1f1] flex-grow rounded-lg flex-grow flex justify-between items-center p-3 relative" >
+                <div class="station2">
+                    <input type="text" placeholder="TO" class="placeHolder w-[100%]" style="outline: none;">
+                </div>
+                <div class="nearMeIcon flex justify-center items-center cursor: pointer" >
+                    <span class="material-symbols-outlined text-[#888888]">
+                        distance
+                    </span>
+                </div>
+                <div class="cityListing w-full left-0 rounded-md absolute bg-white text-[#444444]  top-[64px] max-h-[300px]" >
+                    <div class="currentLocation flex p-2 cursor-pointer" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                        <span class="material-symbols-outlined">
+                            distance
+                        </span>
+                        <h1>Your Current Location</h1>
+                    </div>
+                    <ul class="list p-2 " style="overflow: scroll; max-height: 200px; scrollbar-width: none;" >
+                        <li class="cursor-pointer"> Sonipat , Delhi-NCR </li>
+                        <li class="cursor-pointer"> Khatu Shyam Ji , Sikar </li>
+                        <li class="cursor-pointer"> Ringas , Rajasthan </li>
+                        <li class="cursor-pointer"> ChinnaSwamy Stadium </li>
+                        <li class="cursor-pointer"> Chepauk Stadium , Chennai</li>
+                        <li class="cursor-pointer"> Greater Noida </li>
+                        <li class="cursor-pointer"> Chulkana Dham near Panipat  </li>
+                        <li class="cursor-pointer"> Panipat , Haryana </li>
+                        <li class="cursor-pointer"> Rohtak </li>
+                        <li class="cursor-pointer"> Yamunanagar , Haryana </li>
+                        <li class="cursor-pointer"> Kharkhoda near Sonipat </li>
+                        <li class="cursor-pointer"> Mumbai , Maharashtra</li>
+                        <li class="cursor-pointer"> Gurgaon , Delhi-NCR </li>
+                        <li class="cursor-pointer"> Dwarka Delhi </li>
+                        <li class="cursor-pointer"> Gaziabad Uttar Pradesh </li>
+                        <li class="cursor-pointer"> Faridabad , Delhi-NCR </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header2 flex w-[50%] items-center justify-between gap-2">
+            <div class="currentDate flex-grow  bg-[#f1f1f1] rounded-lg p-1 px-3 flex justify-between items-center">
+                <div class="date1 ">
+                    <div class="head text-xs text-[#929292]">Departure Date</div>
+                    <div class="date text-s font-[400]">24 Jun , Tue</div>
+                </div>
+              
+                <div class="date-container">
+                    <input type="date" class="date-input">
+                </div>
+            </div>
+
+            <div class="modifyButton flex-grow " >
+                <button class="py-3 bg-[#01478c] rounded-sm text-white w-full h-full flex gap-3 items-center justify-center" style="cursor: pointer;"> 
+                    <p>Modify Search</p>
+                    <div class="modifyButtonIcon flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </button>
+                
+            </div>
+        </div>
+
+    </div>
+</div>

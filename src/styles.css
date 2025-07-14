@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #f1f1f1;
+}
+/* ************************************ LIGHT MODE ************************************ */
+
+:root{
+    --bg-theme-dark:#e7e7e7;
+    --bg-theme-md:#ececec;
+    --bg-theme-light:#ffffff;
+    --text-theme-dark:#000000;
+    --text-theme-light:#5b5b5b;
+    --text-theme:#df5935;
+    --border-theme-dark:#dee2e6;
+}
+/* ************************************ DARK MODE ************************************ */
+
+:root{
+    --bg-theme-dark:#e7e7e7;
+    --bg-theme-md:#ececec;
+    --bg-theme-light:#ffffff;
+    --text-theme-dark:#000000;
+    --text-theme-light:#5b5b5b;
+    --text-theme:#df5935;
+    --border-theme-dark:#dee2e6;
+}
+/* ************************************ LIGHT MODE ************************************ */
+
+/* :root{
+    --bg-theme-1:#f2f2f7;
+    --bg-theme-2:#e5e5e9;
+    --bg-theme-3:#d1d1d6;
+    --bg-theme-4:#c7c7cb;
+    --bg-theme-5:#aeaeb2;
+    --bg-theme-6:#8e8e93;
+} */
+/* ************************************ DARK MODE ************************************ */
+
+:root{
+    --bg-theme-1:#1c1c1e;
+    --bg-theme-2:#2c2c2e;
+    --bg-theme-3:#3a3a3c;
+    --bg-theme-4:#48484a;
+    --bg-theme-5:#636366;
+    --bg-theme-6:#8e8e93;
+}

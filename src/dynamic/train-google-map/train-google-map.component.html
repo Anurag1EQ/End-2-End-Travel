@@ -1,0 +1,144 @@
+<div class="routes w-screen  bg-[#f1f1f1] select-none " >
+
+    <app-nav-bar></app-nav-bar>
+
+
+    <div class="flex flex-col">
+
+        <div style="position: sticky; top:56px; z-index: 10;">
+            <app-header></app-header>
+        </div>
+
+        <div class="main" style="position: relative;">
+
+            <div class="left flex-shrink-0 bg-blue-50 absolute rounded-2xl w-[20%] " [ngClass]="['animated-move', isMoved ? 'translate-right' : 'translate-left']"  style="top: 8%; left: 10px; z-index: 99;">
+    
+                <div class="leftHeader p-5 flex justify-between items-center ">
+                    <div class="header gap-3 flex justify-between items-center">
+                        <div class="filterIcon flex justify-center items-center">
+                            <span class="material-symbols-outlined text-[#88a6d0]" style="font-size: 2cqi; cursor: pointer;">
+                                tune
+                            </span>
+                        </div>
+                        <div class="quickFilter">
+                            <p class="m-0 text-xl ">Quick Filters</p>
+                        </div>
+                    </div>
+
+                    <div class="reset">
+                        <p class="m-0 text-xs text-[#01478c]">RESET ALL</p>
+                    </div>
+                </div>
+
+                <div class="filter1">
+                    <div class="filter1.1 flex justify-between items-center px-4 py-1">
+                        <label for="toggle0" class="m-0 text-[0.9rem] text-[#333333] opacity-80">Show Available Only</label>
+                        <input type="checkbox" id="toggle0">
+                    </div>
+
+                    <div class="filter1.1 flex justify-between items-center px-4 py-1">
+                        <label for="toggle1" class="m-0 text-[0.9rem] text-[#333333] opacity-80">Show AC Only</label>
+                        <input type="checkbox" id="toggle1">
+                    </div>
+
+                    <div class="filter1.1 flex justify-between items-center px-4 py-1">
+                        <label for="toggle2" class="m-0 text-[0.9rem] text-[#333333] opacity-80">Train from NDLS Only</label>
+                        <input type="checkbox" id="toggle2">
+                    </div>
+
+                    <div class="filter1.1 flex justify-between items-center px-4 py-1">
+                        <label for="toggle3" class="m-0 text-[0.9rem] text-[#333333] opacity-80">Train Reaching LKO Only</label>
+                        <input type="checkbox" id="toggle3">
+                    </div>
+                    
+                </div>
+
+
+                <hr class="w-full my-2 opacity-5">
+                
+                <div class="filter2">
+                    <div class="filter2Heading flex items-center gap-3 p-3">
+                        <div class="filter2Icon">
+                            <span class="material-symbols-outlined text-[#7c81c8]" style="font-size: 1.95rem; cursor: pointer;">
+                                docs
+                            </span>
+                        </div>
+                        <p class="m-0 text-xl">Quota</p>
+                    </div>
+                    <div class="filter2.1 flex flex-wrap p-2 gap-y-2" >
+                        <div class="filter2.1.1 flex gap-3  items-center px-4 py-1 w-[50%]">
+                            <input type="checkbox" id="toggle4">
+                            <label  for="toggle4" class="m-0 text-[0.9rem] text-[#333333] opacity-80">General</label>
+                        </div>
+                        <div class="filter2.1.1 flex gap-3 items-center px-4 py-1 w-[50%]">
+                            <input type="checkbox" id="toggle5">
+                            <label  for="toggle5" class="m-0 text-[0.9rem] text-[#333333] opacity-80">Ladies</label>
+                        </div>
+                        <div class="filter2.1.1 flex gap-3 items-center px-4 py-1 w-[50%]">
+                            <input type="checkbox" id="toggle6">
+                            <label  for="toggle6" class="m-0 text-[0.9rem] text-[#333333] opacity-80">Tatkal</label>
+                        </div>
+                        <div class="filter2.1.1 flex gap-3 items-center px-4 py-1 w-[50%]">
+                            <input type="checkbox" id="toggle7">
+                            <label  for="toggle7" class="m-0 text-[0.9rem] text-[#333333] opacity-80">Sr. Citizen</label>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <hr class="w-full my-2 opacity-5">
+
+                <div class="filter3">
+                    <div class="filter2Heading p-3">
+                        <p class="m-0 text-xl">Arrival Time</p>
+                    </div>
+
+                    <div class="filter3.1 p-2 flex flex-col gap-y-2" >
+
+                        <div class="filter3.1.1 flex  items-center">
+                            <div class="morning flex w-[50%] gap-3  items-center px-4 py-1 ">
+                                <input type="checkbox" id="toggle8">
+                                <label  for="toggle8" class="m-0 text-[0.9rem] text-[#000000] font-[500] opacity-80">Morning</label>
+                            </div>
+                            <label  for="toggle8" class="m-0 text-[#000000] text-[0.85rem] opacity-40">06AM - 12 noon</label>
+                        </div>
+                        <div class="filter3.1.1 flex items-center">
+                            <div class="morning flex w-[50%] gap-3  items-center px-4 py-1 ">
+                                <input type="checkbox" id="toggle9">
+                                <label  for="toggle9" class="m-0 text-[0.9rem] text-[#000000] font-[500] opacity-80">Afternoon</label>
+                            </div>
+                            <label  for="toggle9" class="m-0 text-[#000000] text-[0.85rem] opacity-40">12 noon - 06 PM</label>
+                        </div>
+                        <div class="filter3.1.1 flex  items-center">
+                            <div class="morning flex w-[50%] gap-3  items-center px-4 py-1 ">
+                                <input type="checkbox" id="toggle10">
+                                <label  for="toggle10" class="m-0 text-[0.9rem] text-[#000000] font-[500] opacity-80">Evening</label>
+                            </div>
+                            <label  for="toggle10" class="m-0 text-[#000000] text-[0.85rem] opacity-40">06PM - Midnight</label>
+                        </div>
+                        <div class="filter3.1.1 flex  items-center">
+                            <div class="morning flex w-[50%] gap-3  items-center px-4 py-1 ">
+                                <input type="checkbox" id="toggle11">
+                                <label  for="toggle11" class="m-0 text-[0.9rem] text-[#000000] font-[500] opacity-80">Night</label>
+                            </div>
+                            <label  for="toggle11" class="m-0 text-[#000000] text-[0.85rem] opacity-40">12 Midnight - 06AM </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div (click)="toggleMove()" style="position: absolute; left: 1%; cursor: pointer; " class="toggleButton rounded-full flex justify-center items-center p-2 bg-white">
+                <span class="material-symbols-outlined">
+                    edit_square
+                </span>
+            </div>
+            
+            <div class="content mt-[-3.25rem]" style="height: calc(100vh - 6.5rem);" >
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE_HERE" width="100%" height="100%" style="border:0;"allowfullscreen=""loading="lazy"referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+</div>

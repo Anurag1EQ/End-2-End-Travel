@@ -1,0 +1,25 @@
+<div class="navBar1 flex justify-evenly bg-[#0051a3] text-white ">
+    <div class="navBar flex  w-[80%] p-4 gap-10">
+        <div class="logo hover:cursor-pointer">Logo </div>
+        <div class="menu flex flex-grow justify-center items-center gap-15">
+            <div class="home">
+                <button class="hover:cursor-pointer" (click)="goToPage1()">Home</button>
+            </div>
+            <div class="train">
+                <button class="hover:cursor-pointer" (click)="goToTrain()">Train</button>
+            </div>
+            <div class="bus">
+                <button class="hover:cursor-pointer" (click)="goToBus()">Bus</button>
+            </div>
+            <div class="map">
+                <button (click)="goToGoogleMap()" class="hover:cursor-pointer">Map</button>
+            </div>
+        </div>
+        <div class="acccount flex gap-2 cursor-pointer">
+            <h1>Account</h1>
+            <span class="material-symbols-outlined">
+                account_circle
+            </span>
+        </div>
+    </div>
+</div>
